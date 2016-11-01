@@ -2,7 +2,7 @@ en:
   static_pages:
     home:
       slogan: "The limits of your language mean the limits of your world!"
-      sign up: "Sign up now!"
+      signup: "Sign up now!"
       welcome: "Welcome to the E-Learning"
       link: "http://recruit.framgia.vn/"
     contact:
@@ -33,14 +33,7 @@ en:
       settings: "Settings"
       log_out: "Log out"
 
-  invalid: "Invalid email/password combination"
-  welcome: "Welcome to the E-Learning System!"
-  login: "Log in"
-  new_user: "New user?"
-  signup: "Sign up now!"
-  signup_err: "The form contains"
   signup_title: "Sign up"
-  signup_page: "Sign up"
   create_account: "Create my account"
   profile_update: "Profile updated"
   learned: "Learned: 54 words"
@@ -71,11 +64,9 @@ en:
   add_user: "Add User"
   member: "Member"
   admin_in_user_table: "Admin"
-
-  users:
-    edit:
-      edit: "Edit User"
-      save_change: "Save changes"
+  user_not_found: "User hasn't been existed"
+  delete_user_success: "User has been removed"
+  delete_user_fail: "Cannot delete this user"
 
   admin:
     categories:
@@ -86,3 +77,26 @@ en:
         edit: "Edit"
         delete: "Delete"
 
+  sessions:
+    new:
+      remember: "Remember me on this computer"
+      login: "Log in"
+      new_user: "New user?"
+      signup: "Sign up now!"
+    create:
+      invalid: "Invalid email/password combination"
+
+  shared:
+    error_messages:
+      signup_err: "The form contains"
+
+  users:
+    new:
+      signup_page: "Sign up"
+    create:
+      welcome: "Welcome to the E-Learning System!"
+    edit:
+      update: "Update"
+      edit: "Edit User"
+      save_change: "Save changes"
+      change: "Change"

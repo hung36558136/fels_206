@@ -303,3 +303,18 @@ table {
   color: red;
   font-weight: bold;
 }
+
+/********* FORMS Advanced Login ************/
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
