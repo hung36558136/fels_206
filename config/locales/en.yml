@@ -46,7 +46,6 @@ en:
   learned: "Learned: 54 words"
   right: "Right: 27 words"
   wrong: "Wrong: 27 words"
-  words: "Words"
   lesson: "Lessons"
   recent_activities: "Recent Activities"
   manage_users: "Manage Users"
@@ -94,7 +93,20 @@ en:
   sessions:
     new:
       remember: "Remember me on this computer"
+
   categories:
     category:
       progress: "Da hoc 20/100 tu"
       start: "Start"
+
+  words:
+    index:
+      learned: "Learned"
+      not_learned: "Not learned"
+      all: "All"
+      words: "Words"
+      fillter: "Fillter"
+
+  shared:
+    navbar:
+      words: "Words"
