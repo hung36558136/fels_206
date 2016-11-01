@@ -1,0 +1,15 @@
+<% provide :title, (t ".words") %>
+<%= link_to t(".add_category"), new_admin_category_path, class: "btn btn-success" %>
+<div class="col-md-12">
+  <table class="table text-center">
+    <tr class="table-title">
+      <th class="text-center cate-index"><%= t ".index" %></th>
+      <th class="text-center cate-name"><%= t ".word" %></th>
+      <th class="text-center cate-desc"><%= t ".answer" %></th>
+      <th class="text-center cate-edit"><%= t ".edit" %></th>
+      <th class="text-center cate-del"><%= t ".delete" %></th>
+    </tr>
+    <%= render "word" %>
+  </table>
+  <%= will_paginate %>
+</div>
