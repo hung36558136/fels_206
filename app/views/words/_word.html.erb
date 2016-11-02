@@ -1,0 +1,22 @@
+<% @c_word = @words_answers.size %>
+<% @per_page = Settings.words.per_page %>
+<% @total_page = (@c_word.to_f / @per_page).ceil %>
+<% params[:page] ||= "1" %>
+<% @current_page = params[:page] %>
+<% @current_page = @current_page.to_i %>
+<% @start = (@current_page - 1) * @per_page %>
+
+<% if @current_page < @total_page %>
+  <% @finish = (@current_page - 1) * @per_page + @per_page / 2 - 1 %>
+  <% @check = 1 %>
+  <%= render "row" %>
+<% else %>
+  <% @reminder = @c_word % @per_page %>
+  <% if @reminder % 2 == 0 %>
+    <% @check = 2 %>
+    <%= render "row" %>
+  <% else %>
+    <% @check = 3 %>
+    <%= render "row" %>
+  <% end %>
+<% end %>

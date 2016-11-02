@@ -1,0 +1,33 @@
+<% if @check == 1 %>
+  <% for i in (@start..@finish) %>
+    <tr>
+      <td><%= @words_answers[i][0] %></td>
+      <td class="cate-answer"><%= @words_answers[i][1] %></td>
+      <td><%= @words_answers[i + @per_page / 2][0] %></td>
+      <td><%= @words_answers[i + @per_page / 2][1] %></td>
+    </tr>
+  <% end %>
+<% elsif @check == 2 %>
+  <% for i in (@start..(@start + @reminder / 2 - 1)) %>
+    <tr>
+      <td><%= @words_answers[i][0] %></td>
+      <td class="cate-answer"><%= @words_answers[i][1] %></td>
+      <td><%= @words_answers[i + @reminder /2][0] %></td>
+      <td><%= @words_answers[i + @reminder /2][1] %></td>
+    </tr>
+  <% end %>
+<% elsif @check == 3 %>
+  <% for i in (@start..(@start + (@reminder - 1) / 2)) %>
+    <tr>
+      <td><%= @words_answers[i][0] %></td>
+      <td class="cate-answer"><%= @words_answers[i][1] %></td>
+      <% if i != (@start + (@reminder - 1) / 2) %>
+        <td><%= @words_answers[i + (@reminder + 1) / 2][0] %></td>
+        <td><%= @words_answers[i + (@reminder + 1) / 2][1] %></td>
+      <% else %>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      <% end %>
+    </tr>
+  <% end %>
+<% end %>

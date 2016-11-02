@@ -1,0 +1,41 @@
+<% provide :title, (t ".words") %>
+<div class="">
+  <div class="filter">
+    <p><%= t ".cate" %></p>
+    <div>
+      <div class="selected-category">
+        <select>
+          <option>-----</option>
+          <% @categories.each do |cate| %>
+            <option value="<%= cate.id %>"><%= cate.name %></option>
+          <% end %>
+        </select>
+      </div>
+      <div class="choose-criteria">
+        <% Settings.filter_word.each do |status| %>
+          <label class="wrapper-word-filter">
+            <input type="radio" name="filer" class="word-filter">
+              <span><%= t "#{status}" %></span>
+          </label>
+        <% end %>
+        <label class="wrapper-word-filter">
+          <input type="radio" name="filer" class="word-filter" checked="checked">
+            <span><%= t ".all" %></span>
+        </label>
+      </div>
+      <button type="button" class="btn btn-primary"><%= t ".fillter" %></button>
+    </div>
+  </div>
+  <div class="show-word-list">
+    <table class="table text-center">
+      <tr class="table-title">
+        <th class="text-center word-question"><%= t "word" %></th>
+        <th class="text-center cate-answer"><%= t "answer" %></th>
+        <th class="text-center word-question"><%= t "word" %></th>
+        <th class="text-center"><%= t "answer" %></th>
+      </tr>
+      <%= render "word" %>
+    </table>
+  <%= will_paginate %>
+  </div>
+</div>
