@@ -8,11 +8,6 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
-<<<<<<< HEAD
-  get "/words", to: "users#words"
-=======
-
->>>>>>> 38e620cc09f65e1a53816e1998308118cf0f59c9
   resources :users
   resources :categories
 
