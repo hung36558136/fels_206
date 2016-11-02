@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20161027040230) do
-=======
 ActiveRecord::Schema.define(version: 20161101031713) do
->>>>>>> 377d2bfd22e5baeb69c3f28cbc303d9c8aeed229
 
   create_table "activities", force: :cascade do |t|
     t.integer  "user_id"
