@@ -133,6 +133,17 @@ en:
       notlearned: "Not learned"
       status: "Status: "
       index: "No."
+      select: "-------------------"
+    new:
+      wordlist: "Word List"
+      category: "Category: "
+      filter: "Search"
+      all: "All"
+      learned: "Learned"
+      notlearned: "Not learned"
+      status: "Status: "
+      index: "No."
+      select: "-------------------"
 
   shared:
     navbar:

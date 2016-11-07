@@ -19,4 +19,11 @@ class Word < ApplicationRecord
       .select("words.id, words.content as w_content, \n
         answers.content as a_content")
   end
+
+  scope :filter_word_by_category, -> category_id  do
+    joins("inner join answers on words.id = answers.word_id \n
+      and answers.is_correct = 't' and words.category_id = #{category_id}")
+          .select("words.id, words.content as w_content, \n
+            answers.content as a_content")
+  end
 end
